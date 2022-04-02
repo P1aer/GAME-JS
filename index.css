@@ -1,5 +1,69 @@
-.canvas {
+body {
     max-width: 1024px;
     margin: 10% auto 0 auto;
 }
+* {
+    box-sizing: border-box;
+}
+.canvas {
+    display: inline-block;
+    position: relative;
+}
+.canvas > div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.p-health,.e-health {
+    background-color: orangered;
+    height: 30px;
+}
+.p-health {
+    width: 100%;
+}
+.p-health > div,.e-health > div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: green;
+}
+.p-health > div {
+    width: 100%;
+}
+.e-health > div {
+    left: 0;
+}
+.hp-bar {
+    position: relative;
 
+    width: 100%;
+}
+
+.timer {
+    background-color: lightblue;
+    width: 100px;
+    flex-shrink: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player-hp {
+    display: flex;
+    justify-content: flex-end
+}
+
+.message {
+    position: absolute;
+    color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
