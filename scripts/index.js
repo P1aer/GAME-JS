@@ -102,7 +102,7 @@ const enemy = new Fighter({
             frames: ENEMY_FRAME_ATTACK
         },
         takeHit : {
-            image : "./assets/kenji/Take hit.png",
+            image : "./assets/kenji/Take Hit.png",
             frames: ENEMY_FRAME_TAKE_HIT
         },
         death: {
